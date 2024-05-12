@@ -13,6 +13,10 @@ This is very very rough work in progress.
 Support document can be found here:
 https://docs.google.com/document/d/190u04rzto6zan9yoYs5003pHowbAGUDsRUne_LGYovw/edit
 
+## Install the development version
+If you want to test while we're building, download this repo and follow these instructions to load it onto your Chrome browser:
+https://webkul.com/blog/how-to-install-the-unpacked-extension-in-chrome/
+
 ## 45B - Cardano Enablement
 45B - Cardano Enablement is a hub of Cardano-centric diversely-skilled professionals collaborating towards onboarding end-users and SMBs to Web3.
 
