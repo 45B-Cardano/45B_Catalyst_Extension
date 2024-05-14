@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Cardano Upvote Extension",
-  "version": "1.0",
-  "description": "Automatically upvotes elements on cardano.ideascale.com",
+  "name": "45B <> Catalyst Extension",
+  "version": "0.1",
+  "description": "Simple and handy util to help Cardano Catalyst Community users to navigate, favorite and share proposals.",
   "permissions": ["activeTab"],
   "background": {
     "scripts": ["background.js"],
