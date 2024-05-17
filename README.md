@@ -1,5 +1,7 @@
 # 45B <> Catalyst Extension
 
+![45B <> Catalyst Extension html mock](/static/45b_cat_mock.png)
+
 Simple and handy util to help Cardano Catalyst Community users to navigate, favorite and share proposals.
 
 - Quickly hop up and down when navigating sections
