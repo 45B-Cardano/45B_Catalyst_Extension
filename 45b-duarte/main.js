@@ -27,8 +27,7 @@ document.getElementById('read-content').addEventListener('click', () => {
             ]
             // podia ser feito a partir de uma lista mais concisa 
             // (ex: apenas os que têm um mínimo de length, ou dentro de um elemento específico)
-            const matches = Array.from(document.querySelectorAll('h2'))
-            .filter(x => keyphrases.find(k=> x.innerText.includes(k)) ).map(x => x.innerText); // para cada h2, vê se tem uma das keyphrases
+            const matches = Array.from(document.querySelectorAll('h2')).map(x=>x.innerText);
             var result = matches;
             
             // https://developer.chrome.com/docs/extensions/mv3/messaging/
