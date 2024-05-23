@@ -1,0 +1,14 @@
+{
+    "name": "45B Catalyst Browser Extension",
+    "description": "45B Catalyst Browser Extension",
+    "version": "0.17",
+    "manifest_version": 3,
+    "icons": {
+        "128": "45b_128.png"
+      },
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "45b_128.png"
+    },
+    "permissions": ["activeTab", "scripting"]
+}
