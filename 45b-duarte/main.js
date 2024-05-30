@@ -1,7 +1,18 @@
 let keyphrases = [
     "What is the problem",
     "Summarize your solution",
-    "Describe your proposed solution"
+    "describe your proposed solution",
+    "measure the success",
+    "your capability to deliver",
+    "the main goals",
+    "detailed breakdown, project’s milestones, main tasks or activities",
+    "outputs and intended outcomes",
+    "detailed budget breakdown",
+    "in the project team",
+    "represent value for money",
+    "Requested funds in ada",
+    "how many months",
+    "key milestones"
 ]
 
 
@@ -23,7 +34,18 @@ document.getElementById('read-content').addEventListener('click', () => {
             let keyphrases = [
                 "What is the problem",
                 "Summarize your solution",
-                "Describe your proposed solution"
+                "describe your proposed solution",
+                "measure the success",
+                "your capability to deliver",
+                "the main goals",
+                "detailed breakdown, project’s milestones, main tasks or activities",
+                "outputs and intended outcomes",
+                "detailed budget breakdown",
+                "in the project team",
+                "represent value for money",
+                "Requested funds in ada",
+                "how many months",
+                "key milestones"
             ]
             // podia ser feito a partir de uma lista mais concisa 
             // (ex: apenas os que têm um mínimo de length, ou dentro de um elemento específico)
