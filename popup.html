@@ -1,86 +1,204 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>45B <> Catalyst Extension</title>
-  <link rel="stylesheet" href="popup.css">
-</head>
-<body>
-  <script src="popup.js"></script>
-  <div class="flex h-max w-[22rem] flex-col overflow-hidden border rounded font-sans">
-    <div class="h-14 w-full content-center border-red-600 bg-customBlue text-lg font-semibold">
-      <div class="border-full justify-center text-center">
-        <p>45B <> Catalyst Extension</p>
-      </div>
-    </div>
-  
-    <div class="w-full ">
-      <div class="flex justify-center pt-6 font-semibold">
-        <div class="pr-1">
-          <button class="h-9 w-[8rem] content-center rounded-3xl border bg-customBlue text-center text-sm hover:text-gray-900 hover:border-gray-400">Previous</button>
-        </div>
-        <div class="pl-1">
-          <button class="h-9 w-[8rem] content-center rounded-3xl border bg-customBlue text-center text-sm hover:text-gray-900 hover:border-gray-400">Next</button>
+  <head>
+    <title>45B <> Catalyst Extension</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <script src="popup.js"></script>
+    <div
+      class="flex h-max w-[22rem] flex-col overflow-hidden border rounded font-sans"
+    >
+      <div
+        class="h-14 w-full content-center bg-customBlue text-lg font-semibold"
+      >
+        <div class="border-full justify-center text-center">
+          <p>45B <> Catalyst Extension</p>
         </div>
       </div>
-  
-      <div class="grid-cols-14 px-4 pt-2 pb-4 ">
-        <div class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold">What is the problem</div>
-        <div class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold">Summarize the solution</div>
-        <div class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold">Describe your proposed solution</div>
-        <div class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold">Measure the success</div>
-        <div class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold">Your capability to deliever</div>
-        <div class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold">Your main goals</div>
-        <div class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold">Detailed breakdown</div>
-        <div class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold">Project's milestones</div>
-        <div class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold">Main tasks or activities</div>
-        <div class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold">Outputs and intended outcomes</div>
-        <div class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold">Detailed budget breakdown</div>
-        <div class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold">In the project team</div>
-        <div class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold">Represent value for money</div>
-        <div class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold">Requested funds in ADA</div>
-      </div>
-  
-      <div class="flex justify-center text-center">
-        <div class="flex items-center pr-1">
-          <input type="checkbox" name="extensionCheckbox" id="extensionCheckbox" class="h-3 w-3 hover:scale-[1.10]" />
-        </div>
-        <div><label for="extensionCheckbox" class="text-[13px]">Collapse thumbnails</label></div>
-      </div>
-  
-      <div class="px-4 pt-4">
-        <div class="flex justify-between px-3 font-semibold">
-          <div>
-            <button class="duration-50 w-24 transform content-center rounded-xl border-x-transparent bg-customBlue p-1 text-center text-xs transition  hover:shadow-lg">
-              Share To <br />
-              My Favourites
+      <!--  PREVIOUS BUTTON  -->
+      <div class="w-full">
+        <div class="flex justify-center pt-6 font-semibold">
+          <div class="pr-1">
+            <button
+              class="group border-customBlue h-9 w-[7rem] content-center rounded-3xl border bg-customBlue text-center text-sm"
+            >
+              <span class="block group-hover:hidden">Previous</span>
+              <span class="hidden group-hover:block text-gray-700"
+                >Coming Soon</span
+              >
             </button>
           </div>
-          <div><button class="duration-50 w-24 transform content-center rounded-xl border-x-transparent bg-customBlue p-1 text-center text-xs transition hover:shadow-lg">Share this Proposal</button></div>
-          <div>
-            <button class="duration-50 w-24 transform content-center rounded-xl border-x-transparent bg-customBlue p-1 text-center text-xs transition  hover:shadow-lg">
-              Share All <br />
-              My Favourites
+          <!--  HIGHLIGHT BUTTON  -->
+          <div class="pl-1">
+            <button
+              class="group border-customBlue h-9 w-20 p-1 rounded-3xl shadow-glow animate-pulseShadow bg-customBlue text-center text-sm"
+            >
+              Highlight
+            </button>
+          </div>
+          <!--  NEXT BUTTON  -->
+          <div class="pl-1">
+            <button
+              class="group border-customBlue h-9 w-[7rem] content-center rounded-3xl border bg-customBlue text-center text-sm"
+            >
+              <span class="block group-hover:hidden">Next</span>
+              <span class="hidden group-hover:block text-gray-700"
+                >Coming Soon</span
+              >
             </button>
           </div>
         </div>
-        <div class="pb-3 text-right">
-          <a href="" class="text-xs text-blue-700 underline hover:font-semibold">More options</a>
+
+        <div class="grid-cols-14 px-4 pt-2 pb-4">
+          <div
+            class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold"
+          >
+            What is the problem
+          </div>
+          <div
+            class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold"
+          >
+            Summarize the solution
+          </div>
+          <div
+            class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold"
+          >
+            Describe your proposed solution
+          </div>
+          <div
+            class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold"
+          >
+            Measure the success
+          </div>
+          <div
+            class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold"
+          >
+            Your capability to deliever
+          </div>
+          <div
+            class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold"
+          >
+            Your main goals
+          </div>
+          <div
+            class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold"
+          >
+            Detailed breakdown
+          </div>
+          <div
+            class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold"
+          >
+            Project's milestones
+          </div>
+          <div
+            class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold"
+          >
+            Main tasks or activities
+          </div>
+          <div
+            class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold"
+          >
+            Outputs and intended outcomes
+          </div>
+          <div
+            class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold"
+          >
+            Detailed budget breakdown
+          </div>
+          <div
+            class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold"
+          >
+            In the project team
+          </div>
+          <div
+            class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold"
+          >
+            Represent value for money
+          </div>
+          <div
+            class="hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold"
+          >
+            Requested funds in ADA
+          </div>
+        </div>
+
+        <div class="flex justify-center text-center">
+          <div class="flex items-center pr-1">
+            <input
+              type="checkbox"
+              name="extensionCheckbox"
+              id="extensionCheckbox"
+              class="h-3 w-3 hover:scale-[1.10]"
+            />
+          </div>
+          <div>
+            <label for="extensionCheckbox" class="text-[13px]"
+              >Collapse thumbnails</label
+            >
+          </div>
+        </div>
+
+        <div class="px-4 pt-4">
+          <div class="flex justify-between px-3 font-semibold">
+            <div>
+              <button
+                class="duration-50 w-24 transform content-center rounded-xl border-x-transparent bg-customBlue p-1 text-center text-xs transition hover:shadow-lg"
+              >
+                Save To <br />
+                My Favourites
+              </button>
+            </div>
+            <div>
+              <button
+                class="duration-50 w-24 transform content-center rounded-xl border-x-transparent bg-customBlue p-1 text-center text-xs transition hover:shadow-lg"
+              >
+                Share this Proposal
+              </button>
+            </div>
+            <div>
+              <button
+                class="duration-50 w-24 transform content-center rounded-xl border-x-transparent bg-customBlue p-1 text-center text-xs transition hover:shadow-lg"
+              >
+                Share All <br />
+                My Favourites
+              </button>
+            </div>
+          </div>
+          <div class="pb-3 text-right">
+            <a
+              href=""
+              class="text-xs text-blue-700 underline hover:font-semibold"
+              >More options</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="flex w-full bg-yellow-100 px-2 py-1">
+        <div class="h-max w-max content-center pr-2">
+          <img
+            src="assets/45b_tag_sqr.png"
+            alt="45B logo"
+            class="max-h-[6rem] min-h-[6rem] min-w-[6rem] max-w-[6rem] rounded-full"
+          />
+        </div>
+
+        <div class="w-max content-center py-1 pl-4">
+          <p class="text-[13px] leading-snug">
+            Share this
+            <a href="https://github.com/45B-Cardano/45B_Catalyst_Extension" target="_blank" class="text-blue-700 underline">Browser Extension</a>!!
+            <br />
+            Get to know our proposals at
+            <a
+              href="https://45b.io"
+              target="_blank"
+              class="text-blue-700 underline hover:font-semibold"
+              >45B.io</a
+            >. Please consider voting for this and other ideas.
+          </p>
         </div>
       </div>
     </div>
-  
-    <div class="flex w-full bg-yellow-100 px-2 py-1">
-      <div class="h-max w-max content-center pr-2">
-        <img src="https://45b.io/45b_border_tight.png" alt="45B logo" class="max-h-[6rem] min-h-[6rem] min-w-[6rem] max-w-[6rem] rounded-full" />
-      </div>
-  
-      <div class="w-max content-center py-1 pl-4">
-        <p class="text-[13px] leading-snug">
-          Share this <a href="" class="text-blue-700 underline">Browser Extension</a>!! <br />
-          Get to know our proposals at <a href="https://45b.io" target="_blank" class="text-blue-700 underline hover:font-semibold">45B.io</a>. Please consider voting for this and other ideas.
-        </p>
-      </div>
-    </div>
-  </div>
   </body>
 </html>
