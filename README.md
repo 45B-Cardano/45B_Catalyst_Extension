@@ -1,6 +1,8 @@
 # 45B <> Catalyst Extension
 
-![45B <> Catalyst Extension html mock](/static/45b_cat_mock.png)
+![45B <> Catalyst Extension html mock 01](/static/45b_cat_mock_01.png)
+
+![45B <> Catalyst Extension html mock 02](/static/45b_cat_mock_02.png)
 
 **[>> VOTE FOR THIS PROJECT/PROPOSAL <<](https://cardano.ideascale.com/c/idea/123359)**
 
