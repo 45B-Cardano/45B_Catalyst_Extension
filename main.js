@@ -1,18 +1,15 @@
 let keyphrases = [
-    "What is the problem",
-    "Summarize your solution",
-    "describe your proposed solution",
-    "measure the success",
-    "your capability to deliver",
-    "the main goals",
-    "detailed breakdown, project\'s milestones, main tasks or activities",
-    "outputs and intended outcomes",
-    "detailed budget breakdown",
-    "in the project team",
-    "represent value for money",
+    "Name and surname",
     "Requested funds in ada",
     "how many months",
-    "key milestones"
+    "Summarize your solution",
+    "describe your proposed solution",
+    "define the positive impact",
+    "your capability to deliver",
+    "What are the key milestones",
+    "Who is in the project team",
+    "provide a cost breakdown",
+    "cost of the project represent value for money"
 ]
 
 
@@ -32,20 +29,17 @@ document.getElementById('read-content').addEventListener('click', () => {
         function printTitle() {
             // TODO:  ver: porque por enquanto não consegui ter acesso à lista neste contexto?
             let keyphrases = [
-                "What is the problem",
-                "Summarize your solution",
-                "describe your proposed solution",
-                "measure the success",
-                "your capability to deliver",
-                "the main goals",
-                "detailed breakdown, project\'s milestones, main tasks or activities",
-                "outputs and intended outcomes",
-                "detailed budget breakdown",
-                "in the project team",
-                "represent value for money",
+                "Name and surname",
                 "Requested funds in ada",
                 "how many months",
-                "key milestones"
+                "Summarize your solution",
+                "describe your proposed solution",
+                "define the positive impact",
+                "your capability to deliver",
+                "What are the key milestones",
+                "Who is in the project team",
+                "provide a cost breakdown",
+                "cost of the project represent value for money"
             ]
             // podia ser feito a partir de uma lista mais concisa 
             // (ex: apenas os que têm um mínimo de length, ou dentro de um elemento específico)
