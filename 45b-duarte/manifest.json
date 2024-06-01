@@ -10,5 +10,8 @@
       "default_popup": "index.html",
       "default_icon": "45b_128.png"
     },
-    "permissions": ["activeTab", "scripting"]
+    "permissions": ["scripting"],
+    "host_permissions": [
+      "*://cardano.ideascale.com/c/idea/*"
+    ]
 }
