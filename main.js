@@ -5,7 +5,7 @@ let keyphrases = [
     "measure the success",
     "your capability to deliver",
     "the main goals",
-    "detailed breakdown, project’s milestones, main tasks or activities",
+    "detailed breakdown, project\'s milestones, main tasks or activities",
     "outputs and intended outcomes",
     "detailed budget breakdown",
     "in the project team",
@@ -38,7 +38,7 @@ document.getElementById('read-content').addEventListener('click', () => {
                 "measure the success",
                 "your capability to deliver",
                 "the main goals",
-                "detailed breakdown, project’s milestones, main tasks or activities",
+                "detailed breakdown, project\'s milestones, main tasks or activities",
                 "outputs and intended outcomes",
                 "detailed budget breakdown",
                 "in the project team",
@@ -50,7 +50,7 @@ document.getElementById('read-content').addEventListener('click', () => {
             // podia ser feito a partir de uma lista mais concisa 
             // (ex: apenas os que têm um mínimo de length, ou dentro de um elemento específico)
             const elements_matched = Array.from(document.querySelectorAll('h2')).filter(el=> keyphrases.find(k => el.innerText.toLowerCase().includes(k.toLowerCase())));
-            elements_matched.forEach(m=>{m.style="background-color:lightblue;";})
+            elements_matched.forEach(m=>{m.style="background-color:darkblue;";})
             var result = elements_matched.map(x=>x.innerText);
             // https://developer.chrome.com/docs/extensions/mv3/messaging/
             (async () => {
