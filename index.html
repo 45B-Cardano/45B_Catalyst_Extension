@@ -7,7 +7,7 @@
   <body>
     <script src="popup.js"></script>
     <div
-      class="flex h-max w-[22rem] flex-col overflow-hidden border rounded font-sans"
+      class="flex h-[43rem] w-[22rem] flex-col overflow-hidden border rounded font-sans"
     >
       <div
         class="h-14 w-full content-center bg-customBlue text-lg font-semibold"
@@ -21,7 +21,7 @@
         <div class="flex justify-center pt-6 font-semibold">
           <div class="pr-1">
             <button
-              class="group border-customBlue h-9 w-[7rem] content-center rounded-3xl border bg-customBlue text-center text-sm"
+              class="group border-customBlue h-9 w-[6rem] content-center rounded-3xl border bg-customBlue text-center text-sm"
             >
               <span class="block group-hover:hidden">Previous</span>
               <span class="hidden group-hover:block text-gray-700"
@@ -31,8 +31,9 @@
           </div>
           <!--  HIGHLIGHT BUTTON  -->
           <div id="read-content" class="pl-1">
+            <!---->
             <button
-              class="group border-customBlue h-9 w-20 p-1 rounded-3xl shadow-glow animate-pulseShadow bg-customBlue text-center text-sm"
+              class="transition duration-150 ease-in-out active:scale-95 border-customBlue h-9 w-24 p-1 rounded-3xl bg-customBlue text-center text-sm"
             >
               Highlight
             </button>
@@ -40,7 +41,7 @@
           <!--  NEXT BUTTON  -->
           <div class="pl-1">
             <button
-              class="group border-customBlue h-9 w-[7rem] content-center rounded-3xl border bg-customBlue text-center text-sm"
+              class="group border-customBlue h-9 w-[6rem] content-center rounded-3xl border bg-customBlue text-center text-sm"
             >
               <span class="block group-hover:hidden">Next</span>
               <span class="hidden group-hover:block text-gray-700"
@@ -50,10 +51,21 @@
           </div>
         </div>
 
-        <div id='result-div' class="grid-cols-14 px-4 pt-2 pb-4">
-          <code id='result'></code>
+        <div class="flex justify-center pt-2">
+          <!--  JUMP TO SECTION BUTTON  -->
+          <button
+            class="group border-customBlue h-6 w-[12rem] content-center rounded-3xl border bg-customBlue text-center text-sm"
+          >
+            <span class="block group-hover:hidden">Jump to section</span>
+            <span class="hidden group-hover:block text-gray-700"
+              >Coming Soon</span
+            >
+          </button>
         </div>
-  
+        <div id="result-div" class="grid-cols-14 px-4 pt-2 pb-4">
+          <code id="result"></code>
+        </div>
+
         <div class="flex justify-center text-center">
           <div class="flex items-center pr-1">
             <input
@@ -72,34 +84,53 @@
 
         <div class="px-4 pt-4">
           <div class="flex justify-between px-3 font-semibold">
+            <!--  MY FAVOURITES BUTTON  -->
             <div>
               <button
-                class="duration-50 w-24 transform content-center rounded-xl border-x-transparent bg-customBlue p-1 text-center text-xs transition hover:shadow-lg"
+                class="group duration-50 w-24 transform content-center rounded-xl border-x-transparent bg-customBlue p-1 text-center text-xs transition hover:shadow-lg"
               >
-                Save To <br />
-                My Favourites
+                <span class="block group-hover:hidden"
+                  >Save To <br />
+                  My Favourites</span
+                >
+                <span class="hidden group-hover:block text-gray-700"
+                  >Coming <br />Soon</span
+                >
               </button>
             </div>
+            <!--  THIS PROPOSAL BUTTON  -->
             <div>
               <button
-                class="duration-50 w-24 transform content-center rounded-xl border-x-transparent bg-customBlue p-1 text-center text-xs transition hover:shadow-lg"
+                class="group duration-50 w-24 transform content-center rounded-xl border-x-transparent bg-customBlue p-1 text-center text-xs transition hover:shadow-lg"
               >
-                Share this Proposal
+                <span class="block group-hover:hidden"
+                  >Share <br />
+                  This Proposal</span
+                >
+                <span class="hidden group-hover:block text-gray-700"
+                  >Coming <br />Soon</span
+                >
               </button>
             </div>
+            <!--  ALL FAVOURITES BUTTON  -->
             <div>
               <button
-                class="duration-50 w-24 transform content-center rounded-xl border-x-transparent bg-customBlue p-1 text-center text-xs transition hover:shadow-lg"
+                class="group duration-50 w-24 transform content-center rounded-xl border-x-transparent bg-customBlue p-1 text-center text-xs transition hover:shadow-lg"
               >
-                Share All <br />
-                My Favourites
+                <span class="block group-hover:hidden"
+                  >Share All <br />
+                  My Favourites</span
+                >
+                <span class="hidden group-hover:block text-gray-700"
+                  >Coming <br />Soon</span
+                >
               </button>
             </div>
           </div>
           <div class="pb-3 text-right">
             <a
               href=""
-              class="text-xs text-blue-700 underline hover:font-semibold"
+              class="text-xs text-blue-700 underline font-semibold hover:text-gray-700"
               >More options</a
             >
           </div>
@@ -118,7 +149,12 @@
         <div class="w-max content-center py-1 pl-4">
           <p class="text-[13px] leading-snug">
             Share this
-            <a href="https://github.com/45B-Cardano/45B_Catalyst_Extension" target="_blank" class="text-blue-700 underline">Browser Extension</a>!!
+            <a
+              href="https://github.com/45B-Cardano/45B_Catalyst_Extension"
+              target="_blank"
+              class="text-blue-700 underline"
+              >Browser Extension</a
+            >!!
             <br />
             Get to know our proposals at
             <a
@@ -126,7 +162,8 @@
               target="_blank"
               class="text-blue-700 underline hover:font-semibold"
               >45B.io</a
-            >. Please consider voting for this and other ideas. <em>(v0.1.02)</em>
+            >. Please consider voting for this and other ideas.
+            <em>(v0.1.02)</em>
           </p>
         </div>
       </div>
