@@ -13,9 +13,9 @@ let keyphrases = [
 ]
 
 
-let list = document.querySelector('#list');
+let list = document.querySelector('#result-div');
 for (const phrase of keyphrases) {
-    const li = document.createElement("li");
+    const li = document.createElement("div");
     const textnode = document.createTextNode(phrase);
     li.appendChild(textnode);
     list.appendChild(li);
@@ -43,8 +43,20 @@ document.getElementById('read-content').addEventListener('click', () => {
             ]
             // podia ser feito a partir de uma lista mais concisa 
             // (ex: apenas os que têm um mínimo de length, ou dentro de um elemento específico)
+
+            //TODO: não verificar duas vezes, só dar uma volta com um if
             const elements_matched = Array.from(document.querySelectorAll('h2')).filter(el=> keyphrases.find(k => el.innerText.toLowerCase().includes(k.toLowerCase())));
-            elements_matched.forEach(m=>{m.style="background-color:darkblue;";})
+            elements_matched.forEach(m=>{
+                m.style="background-color:darkblue; color:white;";
+                m.innerHTML = m.innerText; //reset
+                let phrase = keyphrases.find(k => m.innerText.toLowerCase().includes(k.toLowerCase()));
+                let index = m.innerText.indexOf(phrase);
+
+                let oldInner = m.innerHTML.substring(index,phrase.length+index);
+                let oldInnerSplit = m.innerHTML.split(oldInner);
+                let newElement = "<span style='background-color:lightgreen;color:black;'>"+oldInner+"</span>";
+                m.innerHTML = oldInnerSplit[0]+ newElement + oldInnerSplit[1];
+            })
             var result = elements_matched.map(x=>x.innerText);
             // https://developer.chrome.com/docs/extensions/mv3/messaging/
             (async () => {
@@ -71,13 +83,13 @@ chrome.runtime.onMessage.addListener(
                 "from the extension");
     var resp = request.info;
     if (resp) {
-        var resultElement = document.getElementById("list");
+        var resultElement = document.getElementById("result-div");
         var listItems = Array.from(resultElement.children);
         
         // TODO: fazer mais elegante
         for (const item of listItems) {
             if(resp.find(r => r.toLowerCase().includes(item.innerText.toLowerCase()))){
-                item.style="background-color:lightblue;"
+                item.className="bg-lime-300 hover:bg-blue-200 pl-2 pr-1 hover:rounded hover:font-semibold cursor-pointer"
                 // item.onclick=
             }else{
                 item.style="";

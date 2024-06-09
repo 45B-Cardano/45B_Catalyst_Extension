@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "45B Catalyst Browser Extension",
-  "version": "0.1.01",
+  "version": "0.1.02",
   "description": "Simple tool to help Cardano Catalyst Community users navigate, save favorites and share proposals.",
   "icons": {
     "16": "assets/45b_tag_sqr.png",
@@ -9,8 +9,7 @@
     "128": "assets/45b_tag_sqr.png"
   },
   "action": {
-    "default_popup": "index.html",
-    "default_icon": "assets/45b_tag_sqr.png"
+    "default_popup": "index.html"
   },
   "permissions": ["scripting"],
   "host_permissions": ["*://cardano.ideascale.com/c/idea/*"]
