@@ -52,8 +52,8 @@ document.getElementById('read-content').addEventListener('click', () => {
                 let phrase = keyphrases.find(k => m.innerText.toLowerCase().includes(k.toLowerCase()));
                 let index = m.innerText.indexOf(phrase);
 
-                let oldInner = m.innerHTML.substring(index,phrase.length+index);
-                let oldInnerSplit = m.innerHTML.split(oldInner);
+                let oldInner = m.innerText.substring(index,phrase.length+index);
+                let oldInnerSplit = m.innerText.split(oldInner);
                 let newElement = "<span style='background-color:lightgreen;color:black;'>"+oldInner+"</span>";
                 m.innerHTML = oldInnerSplit[0]+ newElement + oldInnerSplit[1];
             })
